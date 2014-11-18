@@ -592,7 +592,7 @@ public class HtmlImpl implements Html {
 			sb.append(text.substring(x));
 		}
 
-		return sb.toString();
+		return sb.toString().trim().replaceAll("\\s+", StringPool.SPACE);
 	}
 
 	/**
